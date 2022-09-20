@@ -1,7 +1,10 @@
-import { Hero } from './class/Hero'
-import powers, { Power } from './data/power'
+import { printObj, genericFuctin } from './generics/generics'
 
-const iroman = new Hero('Iron', 2, 34)
+// printObj(2342345)
+// printObj("Nombre")
+// printObj(new Date().getTime())
+// printObj('2323')
 
-console.log(powers.map((item: Power) => item))
-console.log(iroman.power)
+
+console.log(genericFuctin(233).toFixed(2));
+console.log(genericFuctin('Hola Mundo').toLowerCase())
