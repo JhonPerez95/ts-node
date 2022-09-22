@@ -1,10 +1,11 @@
-
-
-export const printObj = (arg:any) => {
+export const printObj = (arg: any) => {
   console.log(arg)
 }
 
+export function genericFuctin<T>(arg: T): T {
+  return arg
+}
 
-export function genericFuctin<T>(arg:T):T {
+export const genericFuctinArrow = <T>(arg: T): T => {
   return arg
 }
