@@ -1,15 +1,6 @@
-import {
-  printObj,
-  genericFuctin,
-  genericFuctinArrow,
-} from './generics/generics'
+import { getPokemon } from './generics/getPokemon'
 
-// printObj(2342345)
-// printObj("Nombre")
-// printObj(new Date().getTime())
-// printObj('2323')
-
-console.log(genericFuctin(233).toFixed(2))
-console.log(genericFuctin('Hola Mundo').toLowerCase())
-console.log(genericFuctinArrow('Hola Mundo').toLowerCase())
-console.log(genericFuctinArrow('Hola Mundo').toLowerCase())
+getPokemon(3)
+  .then((res) => console.log(res.name))
+  .catch((err) => console.log(err))
+  .finally(() => console.log('Finalizo la getPokemon'))
