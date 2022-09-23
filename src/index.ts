@@ -1,7 +1,10 @@
-import { Hero } from './class/Hero'
-import powers, { Power } from './data/power'
+import express from 'express'
 
-const iroman = new Hero('Iron', 2, 34)
+const app = express()
 
-console.log(powers.map((item: Power) => item))
-console.log(iroman.power)
+app.get('/', (req, res) => {
+  res.json({ success: 'Success Route !' })
+})
+app.listen(3030, () => {
+  console.log('server listening on port 3030')
+})
